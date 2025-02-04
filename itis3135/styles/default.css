@@ -39,13 +39,15 @@ ul{
 
 b{
     font: bold;
-    
 }
 .courses{
     margin-left: 5%;
 }
-.contract{
-    margin-left: -45%;
-    margin-right: -45%;
 
+.contract{
+    margin-left: -25%;
+    margin-right: -25%;
+}
+.sign{
+    font: italic;
 }
