@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Hobby Page</title>
+    <style>
+body{
+    background-color:  rgb(122, 14, 14);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace
+}
+main {
+        margin: 0 auto;
+        min-height: 77vh;
+}
+      header {
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      header nav a {
+        text-decoration: none;
+        color: white;
+      }
+      header nav a:hover {
+        text-decoration: underline;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      footer {
+        text-align: center;
+      }
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      figcaption a {
+        color: white;
+        text-decoration: none;
+      }
+      figcaption a:hover {
+        text-decoration: underline;
+      }
+      figure {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+      }
+      section {
+        background-color: #ca4e4e;
+        max-width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      img{
+        height: 20vh;
+
+      }
+      section p {
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      section img {
+        border-radius: 10px;
+      }
+
+      fieldset {
+        display: flex;
+        flex-direction: column;
+      }
+      button {
+        background-color: #a01919;
+        color: white;
+        height: 30px;
+        border: none;
+        font-size: 1em;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: #af5555;
+      }
+      ul {
+        display: table;
+        margin: 0 auto;
+        list-style-position: outside;
+        text-align: left;
+        padding-left: 0;
+      }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pokémon</h1>
+        <nav>
+            <a href="javascript:void(0)" onclick="showSection('what')">What</a>
+            |
+            <a href="javascript:void(0)" onclick="showSection('who')">Who</a>
+            |
+            <a href="javascript:void(0)" onclick="showSection('when')">When</a>
+            |
+            <a href="javascript:void(0)" onclick="showSection('where')">Where</a>
+            |
+            <a href="javascript:void(0)" onclick="showSection('why')">Why</a>
+            |
+            <a href="javascript:void(0)" onclick="showSection('how')">How</a>
+            |
+            <a href="javascript:void(0)" onclick="showSection('ai-prompts')">AI Prompts</a>
+
+        </nav>
+       
+    </header>
+    <main>
+        <section id="what" style="display: block;">
+            <h2>What</h2>
+            <figure>
+              <img src="images/pokeball.webp">
+              <figcaption>
+                <em> A Staple of the Pokémon Franchise
+                  <a href="https://pixabay.com/users/95c-484762/" target="_blank">95C</a>
+                  on
+                  <a href="https://pixabay.com/illustrations/pokeball-pokemon-game-ball-1594373/" target="_blank">pixabay</a></em>
+              </figcaption>
+            </figure>
+            <p>
+              <strong>Pokémon </strong> (short for "Pocket Monsters") is a multimedia franchise created by Nintendo, Game Freak, and Creatures. It was first introduced in 1996 with the release of Pokémon Red and Green (later released as Red and Blue internationally) for the Game Boy. Since then, Pokémon has grown into one of the most successful and beloved franchises in the world, spanning video games, trading cards, television series, movies, and more.
+            </p>
+            <h3>Ways to enjoy Pokémon :</h3>
+            <ul>
+              <li>Mainline Games</li>
+              <li>Pokémon GO</li>
+              <li>The Trading Card Game (TCG)</li>
+              <li>Anime/Manga</li>
+              <li>Merchandise and Collectibles</li>
+            </ul>
+          </section>
+
+          <section id="who" style="display: none;">
+            <h2>Who</h2>
+            <figure>
+              <img src="images/image.jpg">
+              <figcaption><em>Picture of me, a Pokémon Enjoyer.</em></figcaption>
+            </figure>
+            <p>
+              I have been indulging in Pokémon media since 2011.
+              After getting my very own DS when I was younger I started playing the games when I got a copy of Soul Silver. After playing the mainline games I started to get interested in the Anime and The card game. I started collecting the cards. When Pokémon Go cam out when i was much older, it was like a dream come true.
+            </p>
+            <h3>Enter Your First Game and Favorite Pokémon!</h3>
+            <form>
+              <fieldset>
+                <legend>Info</legend>
+                <label for="first-name">Enter Your First Name:</label><br>
+                <input id="first-name" name="first-name" type="text" required=""><br><br>
+    
+                <label for="favorite">Enter Your Favorite Pokémon:</label><br>
+                <input id="favorite" name="favorite" type="text" required=""><br><br>
+    
+                <label for="game">Enter Your First Game:</label><br>
+                <select id="game" name="game">
+                    <option value="" disabled selected>Select your first Pokémon game</option>
+                    <option value="g1">Red & Blue</option>
+                    <option value="g2">Gold & Silver</option>
+                    <option value="g3">Ruby & Sapphire</option>
+                    <option value="g4">Diamond & Pearl</option>
+                    <option value="g5">Black & White</option>
+                    <option value="g6">X & Y</option>
+                    <option value="g7">Sun & Moon</option>
+                    <option value="g8">Sword & Shield</option>
+                    <option value="g9">Scarlet & Violet</option>
+                </select>
+                <button type="submit">Submit</button>
+              </fieldset>
+            </form>
+          </section>
+
+          <section id="when" style="display: none;">
+            <h2>When</h2>
+            <figure>
+              <img src="images/mewtwo.avif">
+              <figcaption>
+                <em>Pokémon first ever Legendary Statue - Photo by
+                  <a href="https://unsplash.com/@branden_skeli" target="_blank">Branden Skeli</a>
+                  on
+                  <a href="https://unsplash.com/photos/a-statue-of-a-man-riding-a-cat-in-front-of-a-building-X2tTCxbR5IY" target="_blank">Unsplash</a></em>
+              </figcaption>
+            </figure>
+            <p>
+                Pokémon has been around for decades, evolving with new games, shows, and experiences. Pokémon has a national day on febuary 27th every year where they announce all the plans for the coming year. Here are some key moments:
+            </p>
+            </p>
+            <h3>A Simplified Timeline of Pokémons Biggest Achievements:</h3>
+            <ul>
+                <li><strong>1996:</strong> Pokémon Red & Green released in Japan.</li>
+                <li><strong>1998:</strong> Pokémon Red & Blue released internationally.</li>
+                <li><strong>1999:</strong> Pokémon Trading Card Game launched.</li>
+                <li><strong>2006:</strong> Pokémon Diamond & Pearl introduced online trading.</li>
+                <li><strong>2016:</strong> Pokémon GO revolutionized mobile gaming.</li>
+                <li><strong>2022:</strong> Pokémon Scarlet & Violet introduced open-world gameplay.</li>
+            </ul>
+          </section>
+
+          <section id="where" style="display: none;">
+            <h2>Where</h2>
+            <figure>
+                <img src="images/pika.avif">
+                <figcaption>
+                  <em>Pokémon Exhibit in South Korea - Photo by
+                    <a href="https://unsplash.com/@nardly" target="_blank">Daniel Bernard</a>
+                    on
+                    <a href="https://unsplash.com/photos/a-group-of-pikachu-statues-in-a-building-8WBqsyBWN4U" target="_blank">Unsplash</a></em>
+                </figcaption>
+              </figure>
+            <p>
+                Pokémon can be enjoyed in a variety of places, from digital platforms to real-world locations. Whether you're playing games, watching the anime, or participating in community events, Pokémon is accessible nearly everywhere.
+            </p>
+            
+            <h3>Where to Play Pokémon:</h3>
+            <ul>
+                <li><strong>Video Games:</strong> Available on Nintendo consoles like the Game Boy, DS, Switch, and mobile devices.</li>
+                <li><strong>Pokémon GO:</strong> Played in real-world locations using augmented reality.</li>
+                <li><strong>Pokémon Trading Card Game:</strong> Played in hobby shops, tournaments, and online through the Pokémon TCG Live app.</li>
+            </ul>
+        
+            <h3>Where to Watch Pokémon:</h3>
+            <ul>
+                <li><strong>TV & Streaming:</strong> Available on Netflix, Pokémon TV, and other streaming services.</li>
+                <li><strong>Theatrical Releases:</strong> Pokémon movies are released in cinemas worldwide.</li>
+            </ul>
+        
+            <h3>Where to Find Pokémon Communities:</h3>
+            <ul>
+                <li><strong>Online Forums & Social Media:</strong> Reddit, Discord, Twitter, and Facebook groups.</li>
+                <li><strong>Local Events:</strong> Pokémon tournaments, fan conventions, and community Pokémon GO meetups.</li>
+            </ul>
+        </section>
+
+        <section id="why" style="display: none;">
+            <h2>Why</h2>
+            <figure>
+                <img src="images/card.avif">
+                <figcaption>
+                  <em>TCG - Photo by
+                    <a href="https://unsplash.com/@giorgiotrovato" target="_blank">Giorgio Trovato</a>
+                    on
+                    <a href="https://unsplash.com/photos/a-pile-of-pokemon-trading-cards-sitting-on-top-of-each-other-t_x5URJUK4c" target="_blank">Unsplash</a></em>
+                </figcaption>
+              </figure>
+            <p>
+                Pokémon has remained one of the most beloved franchises for decades, and for good reason. It offers players and fans an immersive world filled with adventure, strategy, and creativity. But why do people love Pokémon so much?
+            </p>
+        
+            <h3>Why People Love Pokémon:</h3>
+            <ul>
+                <li><strong>Nostalgia & Longevity:</strong> Many fans grew up with Pokémon, and new generations continue to discover it.</li>
+                <li><strong>Endless Adventure:</strong> The games let players explore vast regions, battle trainers, and catch Pokémon, making each journey unique.</li>
+                <li><strong>Collecting & Strategy:</strong> Whether it’s completing the Pokédex, building a strong team, or mastering the Trading Card Game, Pokémon rewards skill and dedication.</li>
+                <li><strong>Community & Social Interaction:</strong> Pokémon connects fans through online battles, local events, and cooperative gameplay in Pokémon GO.</li>
+                <li><strong>Creative Expression:</strong> From fan art and theories to competitive play and team building, Pokémon allows players to express themselves in countless ways.</li>
+            </ul>
+        
+            <h3>Why Pokémon is Still Popular:</h3>
+            <p>
+                Pokémon constantly evolves with new games, mechanics, and media while keeping the core experience fun and accessible. The franchise's ability to adapt while staying true to its roots is a major reason why it continues to capture hearts worldwide.
+            </p>
+        </section>
+
+          <section id="how" style="display: none;">
+            <h2>How</h2>
+            <figure>
+              <img src="images/starter.avif">
+              <figcaption>
+                <em>Starter Choice - Photo by
+                  <a href="https://unsplash.com/@thimo" target="_blank">Thimo Pedersen</a>
+                  on
+                  <a href="https://unsplash.com/photos/three-pokemon-balls-sitting-on-top-of-a-table-UKbCPTV5bMQ" target="_blank">Unsplash</a></em>
+              </figcaption>
+            </figure>
+            <p>
+                If you want to start playing the Pokémon games, I recommend trying some of the original DS games first. However, if you don’t own a DS and have a Nintendo Switch, I suggest starting with Pokémon Legends: Arceus for its fresh take on gameplay and open-world mechanics, followed by Pokémon Sword and Shield to experience the traditional battle system and competitive play. 
+              </p>
+            <h3>Beginner Tutorial</h3>
+            <a href="https://www.youtube.com/watch?v=AY66aXlFphI" target="_blank">
+                <img src="https://img.youtube.com/vi/AY66aXlFphI/maxresdefault.jpg" alt="Pokémon Video Thumbnail">
+            </a>
+          </section>
+
+          <section id="ai-prompts" style="display: none;">
+            <h2>AI Prompts</h2>
+            <figure>
+              <img src="images/chatgpt-logo.png">
+              <figcaption>
+                <em>ChatGPT logo - Photo by
+                  <a href="https://commons.wikimedia.org/wiki/File:ChatGPT-Logo.png" target="_blank">Johnlearningwiki</a>
+                  on
+                  <a href="https://commons.wikimedia.org/wiki/File:ChatGPT-Logo.png" target="_blank">Wikimedia Commons</a></em>
+              </figcaption>
+            </figure>
+            <h3>Prompts</h3>
+            <ul>
+              <li>How to Enjoy Pokémon?</li>
+              <li>Why is Pokémon so popular?</li>
+              <li>Create a drop down list of all Pokémon mainline games.</li>
+              <li>A simplified timeline of the Pokémon franchise.</li>
+              <li>
+                Given this code generate javascript that uses the nav bar to show
+                certain sections it should hide all sections initially except the
+                "what" section
+              </li>
+              <li>Why people love Pokémon?</li>
+            </ul>
+          </section>
+
+	</main>
+	<footer>   
+        <p>Page Designed by <a href="../antcodesign.com/index.html">Anthony &amp; Co. Design</a> © 2025, <em>Certified in <a href="https://www.freecodecamp.org/certification/justinant/responsive-web-design">Responsive Web Design </a></em></p>
+	</footer>
+    <script>
+        // Function to show a specific section and hide others
+        function showSection(sectionId) {
+          // Get all sections inside <main>
+          const sections = document.querySelectorAll("main section");
+  
+          // Loop through all sections and hide them
+          sections.forEach((section) => {
+            section.style.display = "none";
+          });
+  
+          // Show the selected section
+          const selectedSection = document.getElementById(sectionId);
+          if (selectedSection) {
+            selectedSection.style.display = "block";
+          }
+        }
+  
+        // Hide all sections initially except "what"
+        document.addEventListener("DOMContentLoaded", () => {
+          showSection("what");
+        });
+      </script>
+
+</body>
+    
+</html>
