@@ -98,3 +98,94 @@ td {
 .complex-table .total-row th {
   text-align: right;
 }
+.sitemap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: auto;
+}
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.mySlides img {
+  width: 400px !important;  /* Force a fixed width */
+  height: auto !important;  /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+  border: 3px solid rgb(18, 72, 94);
+  background-color: black;
+}
+.prev,
+.next {
+  display: none;
+}
+.slideshow-container:hover .prev,
+.slideshow-container:hover .next {
+  display: block;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #00bcd4; /* matches your theme */
+  z-index: 1000; /* Make sure it's on top */
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+.caption-container {
+  text-align: center;
+  background-color: rgb(18, 72, 94);
+  padding: 2px 16px;
+  color: white;
+}
+.thumbnail:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.mySlides:first-child {
+  display: block;
+}
+.thumbnail {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 8px 0;
+  gap: 8px;
+}
+.thumbnail-demo {
+  opacity: 0.6;
+  cursor: pointer;
+  width: 80px;
+  height: auto;
+}
+.active,
+.thumbnail-demo:hover {
+  opacity: 1;
+}
+.mySlides img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
