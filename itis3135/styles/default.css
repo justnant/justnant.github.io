@@ -189,3 +189,23 @@ td {
   display: block;
   margin: 0 auto;
 }
+.sitemap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: auto;
+}
+  figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
