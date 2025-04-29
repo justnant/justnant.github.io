@@ -113,8 +113,8 @@ td {
 }
 
 .mySlides img {
-  width: 400px !important;  /* Force a fixed width */
-  height: auto !important;  /* Maintain aspect ratio */
+  
+  height: auto;
   display: block;
   margin: 0 auto;
   border: 3px solid rgb(18, 72, 94);

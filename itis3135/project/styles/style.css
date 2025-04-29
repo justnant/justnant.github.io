@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E0F7FA;
+    color: #37474F;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-color: #009688;
+    color: white;
+  }
+  
+  .site-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+  }
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  
+  .navbar {
+    background-color: #009688;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .navbar a {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #009688;
+    border: 2px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #FF7043;
+    color: white;
+    border-color: #FF7043;
+  }
+  
+  .main-container {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 65vw;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #c7e0de;
+  color: #009688;
+  text-align: center;
+  }
+  
+  .footer {
+    background-color: #CFD8DC;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #37474F;
+  }
+  .food-group-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding-top: 1rem;
+  }
+  
+  details {
+    background-color: white;
+    border: 2px solid #009688;
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  summary {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #009688;
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  summary::before {
+    content: "➤";
+    color: #FF7043;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  details[open] summary::before {
+    transform: rotate(90deg);
+  }
+  
+  details[open] {
+    background-color: #E0F7FA;
+    border-color: #FF7043;
+  }
+  
+
+  .meal-card {
+    background-color: white;
+    border: 2px solid #009688;
+    border-radius: 16px;
+    padding: 1.25rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+
+  .meal-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .meal-card  {
+    font-family: 'Poppins', sans-serif;
+    color: #009688;
+    margin-bottom: 0.75rem;
+  }
+
+  .meal-card ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .meal-card ul li::before {
+    content: "🍽️ ";
+  }
+  .contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border: 2px solid #009688;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .contact-form  {
+    text-align: center;
+    color: #009688;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    height: 120px;
+  }
+
+  .submit-btn {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    background-color: #ff5722;
+  }
+  ul {
+    padding-left: 1.5rem;
+  margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #009688;
+  }
+  .options-container {
+    text-align: center;
+  }
+  
+  .options-container ul {
+    list-style-position: inside;
+    padding-left: 0;
+    display: inline-block;
+    text-align: left;
+  }
+  p {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+  }
